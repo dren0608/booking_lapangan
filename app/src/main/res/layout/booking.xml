@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="546dp"
+        android:layout_height="1030dp"
+        app:srcCompat="@drawable/hijau_fotosentris_selebaran_pertandingan_futsal"
+        tools:layout_editor_absoluteX="-54dp"
+        tools:layout_editor_absoluteY="-160dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metode Pembayaran"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKING"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lapangan"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:text="Waktu"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pembayaran"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="217dp"
+        android:layout_height="63dp"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
