@@ -2,16 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pembayaran"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="543dp"
-        android:layout_height="1130dp"
-        app:srcCompat="@drawable/blue_illustrative_background_a4_document"
-        tools:layout_editor_absoluteX="-80dp"
-        tools:layout_editor_absoluteY="-200dp" />
+        android:layout_width="565dp"
+        android:layout_height="1119dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_illustrative_background_a4_document" />
 
     <TextView
         android:id="@+id/textView10"
@@ -19,14 +22,22 @@
         android:layout_height="wrap_content"
         android:text="DATA LAPANGAN"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
 
     <TableLayout
+        android:id="@+id/tableLapangan"
         android:layout_width="359dp"
         android:layout_height="275dp"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="131dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296">
 
         <TableRow
             android:layout_width="match_parent"

@@ -2,16 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="546dp"
-        android:layout_height="1030dp"
-        app:srcCompat="@drawable/hijau_fotosentris_selebaran_pertandingan_futsal"
-        tools:layout_editor_absoluteX="-54dp"
-        tools:layout_editor_absoluteY="-160dp" />
+        android:layout_width="518dp"
+        android:layout_height="1041dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hijau_fotosentris_selebaran_pertandingan_futsal" />
 
     <TextView
         android:id="@+id/textView12"
@@ -20,8 +23,12 @@
         android:text="Metode Pembayaran"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
 
     <TextView
         android:id="@+id/textView8"
@@ -34,17 +41,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="Nama"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
 
     <TextView
         android:id="@+id/textView9"
@@ -53,8 +64,12 @@
         android:text="Lapangan"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318" />
 
     <TextView
         android:id="@+id/textView9"
@@ -63,8 +78,12 @@
         android:text="Waktu"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
 
     <TextView
         android:id="@+id/textView9"
@@ -73,59 +92,87 @@
         android:text="Total Pembayaran"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="324dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/etNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="129dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/etLapangan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/etWaktu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/etTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnPembayaran"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pembayaran"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerMetode"
         android:layout_width="217dp"
         android:layout_height="63dp"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="376dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

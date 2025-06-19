@@ -14,7 +14,6 @@ import android.content.Intent;
 import com.example.booking_lapangan.R;
 
 public class SplashActivity extends AppCompatActivity {
-3
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

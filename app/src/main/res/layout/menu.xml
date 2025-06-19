@@ -8,14 +8,16 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="536dp"
-        android:layout_height="973dp"
-        app:srcCompat="@drawable/hitam_merah_dan_biru_modern_turnamen_futsal_poster"
-        tools:layout_editor_absoluteX="-37dp"
-        tools:layout_editor_absoluteY="-121dp" />
+        android:layout_width="533dp"
+        android:layout_height="994dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hitam_merah_dan_biru_modern_turnamen_futsal_poster" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLapangan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lapangan"
@@ -29,7 +31,7 @@
         app:strokeColor="#4CAF50" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Data Lapangan"
@@ -43,7 +45,7 @@
         app:strokeColor="#4CAF50" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogout"
         android:layout_width="107dp"
         android:layout_height="38dp"
         android:background="#FFEB3B"
@@ -60,7 +62,7 @@
         app:strokeColor="#4CAF50" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnBooking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Booking"
@@ -72,7 +74,7 @@
         app:layout_constraintVertical_bias="0.184" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnUser"
         android:layout_width="96dp"
         android:layout_height="50dp"
         android:text="User"

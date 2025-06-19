@@ -40,9 +40,24 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
+    implementation("androidx.activity:activity:1.8.0")
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.10.0")
+    implementation("com.android.volley:volley:1.2.1")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+
 }
+configurations.all {
+    resolutionStrategy.eachDependency {
+        if (requested.group == "androidx.core") {
+            useVersion("1.12.0")
+            because("Force androidx.core to fix version conflict")
+        }
+    }
+}
+
