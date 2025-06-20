@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
             String encodedNama = URLEncoder.encode(nama, "UTF-8");
             String encodedPassword = URLEncoder.encode(password, "UTF-8");
 
-            String urlString = "http://192.168.1.12/lapangan/login.php?nama=" + encodedNama + "&password=" + encodedPassword;
+            String urlString = "http://192.168.0.95/lapangan/login.php?nama=" + encodedNama + "&password=" + encodedPassword;
 
             new Thread(() -> {
                 try {

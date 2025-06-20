@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         new Thread(() -> {
             try {
-                URL url = new URL("http://192.168.1.12/lapangan/register.php"); // Ganti sesuai IP/server lokal
+                URL url = new URL("http://192.168.0.95/lapangan/register.php"); // Ganti sesuai IP/server lokal
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);

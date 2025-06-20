@@ -53,7 +53,7 @@ public class LapanganActivity extends AppCompatActivity {
     private void loadLapanganData() {
         new Thread(() -> {
             try {
-                URL url = new URL("http://192.168.1.12/lapangan/get_lapangan.php");
+                URL url = new URL("http://192.168.0.95/lapangan/get_lapangan.php");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("GET");
 

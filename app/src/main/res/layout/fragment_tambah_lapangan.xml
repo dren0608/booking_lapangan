@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Lapangan"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lapangan"
+                android:backgroundTint="#66BB6A"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#000000"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:padding="12dp"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Deskripsi"
+                android:backgroundTint="#66BB6A"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#000000"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:padding="12dp"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Lokasi"
+                android:backgroundTint="#66BB6A"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#000000"
+                android:drawableStart="@android:drawable/ic_dialog_map"
+                android:padding="12dp"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Harga"
+                android:backgroundTint="#66BB6A"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#000000"
+                android:inputType="numberDecimal"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:padding="12dp"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Nama Gambar"
+                android:backgroundTint="#66BB6A"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#000000"
+                android:drawableStart="@android:drawable/ic_menu_gallery"
+                android:padding="12dp"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#66BB6A"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Data"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#388E3C"
+                android:padding="14dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

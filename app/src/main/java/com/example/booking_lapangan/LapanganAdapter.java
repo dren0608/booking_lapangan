@@ -40,7 +40,7 @@ public class LapanganAdapter extends RecyclerView.Adapter<LapanganAdapter.ViewHo
         holder.tvHarga.setText("Rp. " + l.getHarga() + "/jam");
 
         Glide.with(context)
-                .load(l.getImageUrl()) // example: http://192.168.1.12/lapangan/images/lapanganA.jpg
+                .load(l.getImageUrl()) // example: http://192.168.0.95/lapangan/images/lapanganA.jpg
                 .placeholder(R.drawable.placeholder)
                 .into(holder.imgLapangan);
 

@@ -61,7 +61,7 @@ public class MenuActivity extends AppCompatActivity {
         btnData = findViewById(R.id.btnData);
 
         btnData.setOnClickListener(v -> {
-            startActivity(new Intent(MenuActivity.this, DataActivity.class));
+            startActivity(new Intent(MenuActivity.this, TambahLapanganFragment.class));
             finish();
         });
         btnUser = findViewById(R.id.btnUser);
